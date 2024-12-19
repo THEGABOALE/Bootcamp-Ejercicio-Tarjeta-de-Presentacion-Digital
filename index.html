@@ -3,44 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Tarjeta de Presentación</title>
+    <title>Tarjeta de Presentación</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Tarjeta de Presentación</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="skills.html">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="trips.html">Viajes</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar (se cargará dinámicamente) -->
+    <div id="navbar-container"></div>
 
     <!-- Contenido principal -->
     <main class="container text-center mt-4">
         <h1 class="animado">Tarjeta de Presentación Digital</h1>
-        <p class="animado">¡Bienvenido a mi portafolio! Aquí podrás conocer más sobre mí, mis habilidades y mis proyectos.</p>
-        <button id="btn-modal" class="btn btn-success mt-3">Ver más</button>
+        <p class="animado">¡Bienvenido! Aquí podrás conocer más sobre mí, mis habilidades y mis proyectos.</p>
     </main>
 
     <!-- Footer -->

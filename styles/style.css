@@ -27,8 +27,15 @@ p {
 /* Navbar Styles */
 .navbar {
     background-color: #4CAF50;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, height 0.3s ease-in-out;
+    height: 70px; /* Altura inicial */
+    box-shadow: none; /* Sin sombra inicial */
+}
+
+.navbar.scrolled {
+    background-color: #388E3C;
+    height: 60px; /* Reducir altura al hacer scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Agregar sombra */
 }
 
 .navbar .navbar-brand {

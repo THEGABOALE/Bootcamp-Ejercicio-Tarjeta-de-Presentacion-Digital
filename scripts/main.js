@@ -1,39 +1,32 @@
-// Cambiar el color del navbar al hacer scroll
-window.addEventListener("scroll", () => {
-    const navbar = document.querySelector(".navbar");
-    if (window.scrollY > 50) {
-        navbar.style.backgroundColor = "#45a049";
-    } else {
-        navbar.style.backgroundColor = "#4CAF50";
-    }
-});
+// Cargar el navbar dinámicamente
+fetch("navbar.html")
+    .then((response) => response.text())
+    .then((data) => {
+        document.getElementById("navbar-container").innerHTML = data;
 
-// Animaciones cuando los elementos aparecen en pantalla
-const elementos = document.querySelectorAll(".animado");
+        // Inicializar interacciones de Bootstrap
+        const script = document.createElement("script");
+        script.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js";
+        document.body.appendChild(script);
 
-const observar = new IntersectionObserver((entradas) => {
-    entradas.forEach((entrada) => {
-        if (entrada.isIntersecting) {
-            entrada.target.classList.add("visible");
-        } else {
-            entrada.target.classList.remove("visible");
-        }
+        // Agregar lógica para el navbar después de cargar
+        const navbar = document.querySelector(".navbar");
+
+        // Cambiar estilos del navbar al hacer scroll
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+        // Cambiar la clase "active" dinámicamente
+        const links = document.querySelectorAll(".nav-link");
+        links.forEach((link) => {
+            link.addEventListener("click", () => {
+                links.forEach((l) => l.classList.remove("active"));
+                link.classList.add("active");
+            });
+        });
     });
-});
-
-elementos.forEach((el) => observar.observe(el));
-
-// Navbar dinámico
-const links = document.querySelectorAll(".nav-link");
-
-links.forEach((link) => {
-    link.addEventListener("click", () => {
-        links.forEach((l) => l.classList.remove("active"));
-        link.classList.add("active");
-    });
-});
-
-// Modal al hacer clic en un botón
-document.querySelector("#btn-modal").addEventListener("click", () => {
-    alert("¡Gracias por visitar mi portafolio!");
-});
