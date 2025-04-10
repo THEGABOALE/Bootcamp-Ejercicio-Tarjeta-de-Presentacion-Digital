@@ -28,15 +28,28 @@ body{
     background-image: url(../img/elegancia.jpg);
     background-size: cover;
     background-position: center;
-    margin: auto;
+    margin: -50px auto 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card__title{
     text-align: center;
-    font-family: 'Poppins';
     color: white;
-    font-weight: 9000;
-    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.title__name{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.title__job{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #f0f0f0;
 }
 
 .card__text{
@@ -46,6 +59,35 @@ body{
     line-height: 30px;
     font-weight: 500;
     text-align: justify;
+}
+
+.card__skills {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skills__title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.skill img:hover {
+    transform: scale(1.2);
 }
 
 .github__button {
