@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@400;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+    background-image: linear-gradient(rgba(118, 32, 32, 0.514), rgba(0, 0, 0, 0.442)), url(https://images.unsplash.com/photo-1501862700950-18382cd41497?q=80&w=2019&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    padding: 80px 40px;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+
+.card__img{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../img/elegancia.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+.card__title{
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 9000;
+    letter-spacing: 10px;
+}
+
+.card__text{
+    color: white;
+    font-size: 19px;
+    font-family: 'Open Sans';
+    line-height: 30px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.github__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.github__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.github__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.github__link:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.github__link:hover .github__icon {
+    filter: invert(1);
+}
