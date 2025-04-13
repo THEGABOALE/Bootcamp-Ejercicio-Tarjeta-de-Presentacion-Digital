@@ -123,29 +123,3 @@ body {
   filter: invert(1);
 }
 
-.card-wrapper {
-    position: relative;
-    display: inline-block;
-    padding: 8px;
-  }
-  
-  .card-border {
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    border-radius: 25px;
-    z-index: 0;
-    background: linear-gradient(45deg, red, orange, yellow, lime, cyan, blue, magenta, red);
-    background-size: 400% 400%;
-    animation: borderAnimation 10s linear infinite;
-    filter: blur(10px);
-    pointer-events: none;
-  }
-  
-  #card {
-    position: relative;
-    z-index: 1;
-    border-radius: 25px;
-  }
