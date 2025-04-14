@@ -14,4 +14,3 @@ window.addEventListener("DOMContentLoaded", () => {
     wrapper.appendChild(card);
     wrapper.appendChild(border);
   });
-  
