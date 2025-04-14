@@ -5,53 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta de presentación</title>
     <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
-    <div id="card" class="card">
+    <div class="desktop-only">
+        <div id="card" class="card">
 
-        <div class="card__img">
-            
-        </div>
-
-        <div class="card__title">
-            <h1>Hola, aquí el mero Gabo — <span class="highlight">desarrollador en camino al blockchain</span></h1>
-            <h2 class="title__job">Estudiante de Ingeniería en Sistemas | <span class="highlight">Creando códigos bien chill de cojones</span></h2>
-        </div>     
-
-        <div class="card__text">
-            <p>Soy Gabriel Alejandro García Angulo, tengo 18 años actualmente y nací el 30 de enero de 2007. 
-                Actualmente vivo en Managua, Nicaragua. Estudio en la Universidad Americana (UAM), donde curso el segundo año 
-                de Ingeniería en Sistemas. Me apasiona el desarrollo de software y estoy en constante aprendizaje para llevar mis 
-                ideas al siguiente nivel.
-            </p>
-        </div>
-
-        <div class="card__skills">
-            <h3 class="skills__title">Lenguajes que manejo</h3>
-            <div class="skills__list">
-                <div class="skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
-                </div>
-                <div class="skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
-                </div>
-                <div class="skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
-                </div>
-                <div class="skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                </div>
-                <div class="skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
-                </div>
+            <div class="card__img">
+                
             </div>
-        </div>        
-
-        <div class="github__button">
-            <a href="https://github.com/THEGABOALE" target="_blank" class="github__link">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github__icon">
-                Visita mi Github
-            </a>
+    
+            <div class="card__title">
+                <h1>Hola, aquí el mero Gabo — <span class="highlight">desarrollador en camino al blockchain</span></h1>
+                <h2 class="title__job">Estudiante de Ingeniería en Sistemas | <span class="highlight">Creando códigos bien chill de cojones</span></h2>
+            </div>     
+    
+            <div class="card__text">
+                <p>Soy Gabriel Alejandro García Angulo, tengo 18 años actualmente y nací el 30 de enero de 2007. 
+                    Actualmente vivo en Managua, Nicaragua. Estudio en la Universidad Americana (UAM), donde curso el segundo año 
+                    de Ingeniería en Sistemas. Me apasiona el desarrollo de software y estoy en constante aprendizaje para llevar mis 
+                    ideas al siguiente nivel.
+                </p>
+            </div>
+    
+            <div class="card__skills">
+                <h3 class="skills__title">Lenguajes que manejo</h3>
+                <div class="skills__list">
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                    </div>
+                </div>
+            </div>        
+    
+            <div class="github__button">
+                <a href="https://github.com/THEGABOALE" target="_blank" class="github__link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github__icon">
+                    Visita mi Github
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-only">
+        <div id="card" class="card">
+            <div class="card__img"></div>
+            <div class="card__title">
+                <h1>Hola, soy Gabo — <span class="highlight">un tío chill de cojones</span></h1>
+                <h2 class="title__job">Estudiante de Sistemas | <span class="highlight">Desarrollador</span></h2>
+            </div>
+            <div class="github__button">
+                <a href="https://github.com/THEGABOALE" target="_blank" class="github__link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github__icon">
+                    Visita mi Github
+                </a>
+            </div>
         </div>
     </div>
     <script src="scripts/animacion.js"></script>

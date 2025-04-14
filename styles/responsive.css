@@ -1,3 +1,4 @@
+/* Ajustes de visibilidad */
 .desktop-only {
     display: block;
 }
@@ -13,5 +14,45 @@
 
     .mobile-only {
         display: block;
+    }
+
+    .card {
+        padding: 30px 15px;
+        margin: 15px auto;
+        max-width: 400px;
+    }
+
+    .card__title h1 {
+        font-size: 16px;
+    }
+
+    .card__title h2 {
+        font-size: 12px;
+    }
+
+    .card__text {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .skills__list {
+        gap: 8px;
+    }
+
+    .skill img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .github__link {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px 10px;
+        max-width: 320px; /* Ajustado para celulares más pequeños */
     }
 }
